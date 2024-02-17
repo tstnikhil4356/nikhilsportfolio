@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKHIL'S Webpage</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 2;
+
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Slab', serif;
+            font-family: 'Amiko', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 87px;
+        }
+
+        nav ul {
+            justify-content: center;
+            display: flex;
+        }
+
+        nav ul li {
+            font-family: 'Amiko', sans-serif;
+            list-style: none;
+            margin: 0 23px;
+            font-size: 1.42rem;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: beige;
+            text-shadow: 0px 0px 6px rgb(0, 0, 0);
+           text-decoration: none;
+           position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            background: rgb(255, 187, 0);
+            width: 0%;
+            height: 3px;
+            position: absolute;
+            left: 0px;
+            bottom: -6px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover::after {
+            font-size: 1.48rem;
+            width: 100%;
+
+        }
+
+        .left {
+            position: relative;
+            top: 4px;
+            left: -266px;
+            font-size: 29px;
+            font-family: 'Nabla', cursive;
+        }
+
+        .FirstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 49px 0;
+            height: 82vh;
+        }
+
+        .FirstSection div {
+            width: 36vw;
+        }
+
+        .leftsection {
+            margin: 70px;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            text-shadow: 0px 0px 18px rgb(255, 255, 255);
+        }
+
+        .leftsection .buttons {
+            padding: 24px 0px;
+            width: 80vw;
+        }
+
+        .leftsection .first {
+            -webkit-text-stroke: 2px rgb(255, 221, 0);
+            color: transparent;
+        }
+
+        .leftsection .second {
+            -webkit-text-stroke: 2px rgb(255, 221, 0);
+            color: transparent;
+        }
+        .purple {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            text-shadow: 0px 0px 18px rgb(0, 0, 0);
+        }
+
+        .name {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            text-shadow: 0px 0px 18px rgb(0, 0, 0);
+        }
+
+        .deps {
+            text-shadow: none;
+            width: 11vw;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .secondsection {
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            max-width: 117vw;
+            margin: 35px;
+            height: 61vh;
+        }
+
+        .secondsection h1 {
+            font-size: 2.9rem;
+            color: rgb(170, 107, 228);
+            height: 8vh;
+            text-shadow: 0px 0px 18px rgb(0, 0, 0);
+            text-align: center;
+            margin: 6px;
+        }
+
+        .secondsection .box {
+            background-color: rgb(255, 255, 255);
+            height: 3px;
+            margin: 0px;
+            border: 0;
+            display: flex;
+
+        }
+
+        .secondsection .vertical {
+            height: 23px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 170px;
+        }
+
+        .vertical-title {
+            font-family: 'Aref Ruqaa Ink', serif;
+            text-shadow: 0px 0px 6px rgb(0, 0, 0);
+            position: relative;
+            top: 33px;
+            left: -54px;
+            font-size: 1.5rem;
+        }
+
+        .vertical-descr {
+            position: relative;
+            text-shadow: 0px 0px 6px rgb(0, 0, 0);
+
+            top: 43px;
+            left: -54px;
+            width: 179px;
+            font-size: 1.02rem;
+
+        }
+
+        footer {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(38 26 72);
+            height: 200px;
+        }
+
+        .footer {
+            display: flex;
+            margin: 6px 123px;
+        }
+
+        .back-video{
+            position: absolute;
+            right: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .myimage1{
+            border-image-repeat: repeat;
+            height: 922px;
+            width: 1550px;
+        }
+
+    /* ---------------about------------------- */
+        #about{
+            padding: 31px 0;
+            color:rgb(255, 255, 255) ;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .aboutcol1{
+            width: 39vw;  
+        }
+
+        .aboutcol1 img{
+            flex-basis: 35%;
+            margin: 58px;
+            width: 24vw;
+            border-radius: 15px;
+        }
+
+        .aboutcol2{
+            height: 69vh;
+            flex-basis: 60%;
+           
+        }
+        .aboutmedesc{
+            width:56vw;
+
+        }
+        .sub-title{
+            
+            font-size: 60px;
+            font-weight: 600;
+            text-shadow: 0px 0px 18px rgb(255, 255, 255);
+        }
+        
+        .tab-titles{
+            display: inline-flex;
+            margin: 20px 0 40px;
+        }
+        .tab-links{
+            margin-right: 105px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+        .tab-links::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background: rgb(255, 187, 0);
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: 0.6s;
+
+        }
+        .tab-links.active-link::after{
+            width: 50%;
+        }
+        .tab-contents ul li{
+            list-style: disc;
+            margin: 63px 0;
+
+        }
+        .tab-contents ul li span{
+            color: rgb(255, 187, 0);
+            font-size: 32px;
+            text-shadow: 0px 0px 18px rgb(255, 187, 0)
+        }
+        .tab-contents{
+            display: none;
+        }
+        .tab-contents.active-tab{
+            display: block;
+        }
+/* ----------------------projects------------------------------ */
+
+#projects{
+    padding: 110px 0;
+
+}
+.project-lists{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px),1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    transition: trasnform 1s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#77DA7C);
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    transition: height 0.7s;
+}
+.layer a{
+    margin-top: 20px;
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 45px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover .layer{
+   height: 100%;
+}
+ 
+.btn{
+    display: block;
+    margin: 50px auto;  
+    width: fit-content;
+    border: 1px solid rgb(255, 187, 0);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+        background:rgb(255, 187, 0);
+}
+.btn.btn2{
+    font-size: 30px;
+    border: 2px solid rgb(255, 187, 0);
+    padding: 4px;
+    display: inline-block;
+    margin: 9px;
+    text-decoration: none;
+    color: #fff;
+}
+.btn3{
+    color: #262626;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(255, 187, 0);
+    border-radius: 6px;
+    transition: background 0.4s;
+}
+.btn3:hover{
+        background:rgb(255, 187, 0);
+}
+/* ------------contact-------------- */
+    .contact-left{
+        margin-left: 70px;
+        flex-basis: 29%;
+    }
+    .contact-right{
+        flex-basis: 60%;
+    }
+    .contact-left p{
+        margin-top: 30px;
+    }
+    .contact-left p i{
+        color: rgb(255, 187, 0);
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    .social-icons{
+        margin-top: 30px;
+    }
+    .social-icons a{
+        text-decoration: none;
+        font-size: 30px;
+        margin-right: 15px;
+        color: #ababab;
+        display: inline-block;
+        transition: transform 0.5s;
+    }
+    .social-icons a:hover{
+        color:rgb(255, 187, 0);
+        transform: translateY(-5px);
+
+    }
+    .contact-right form{
+        width: 100%;
+
+    }
+    form input, form textarea{
+        width: 90%;
+        border: 0;
+        outline: none;
+        background:#262626;
+        padding: 15px;
+        margin: 15px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    .copyright{
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background:#262626;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    .copyright i{
+        color: #ff004f;
+
+    }
+/* --------------------css for responsive--------------------------------     */
+.myimage1{
+    display: block;
+}
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width:400px){
+    body {
+            background-color: black;
+            background-size: 60%;
+            background-position: 75px 89px;
+            background-image: url(Picsart_24-01-26_23-14-51-598.jpg);
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+            
+         }
+nav .fas{
+    background-position-x: 2px;
+    font-size: 30px;
+    position: absolute;
+    display: block;
+    top: 34px;
+    left: 339px;
+    cursor: pointer;
+}
+nav ul .fas{
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+    nav ul{
+        display: block;
+        background: #252525;
+        position: fixed;
+        top: 0%;
+        right: -250px;
+        width: 210px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }     
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }     
+
+    .tab-contents.active-tab{
+        margin-top: -52px;
+    }
+
+    .sub-title{
+        margin-left: 57px;
+    }
+    .sub-titleprj{
+        margin-top: 231px;
+    }
+
+    .copyright{
+        flex-basis: 100%;
+        width: 102%;
+    }
+
+    .work img{
+        width: 80%;
+        margin-left: 42px;
+    }
+    .layer{
+        width: 80%;
+        margin-left: 42px;
+    }
+    #projects{
+        padding: 44px 0;
+    }
+    .btn{
+        margin: 22px auto;
+    }
+    .contact-left, .contact-right{
+        
+        margin-top: 2px;
+        flex-basis: 100%;
+    }
+    .contact-right form{
+        margin-left: 15px;
+        width: 95% ;
+    }
+    .btn3{
+        margin-left: 126px;
+    }
+   .aboutcol1 img {
+    flex-basis: 100%;
+    margin: 46px;
+    width: 52vw;
+    border-radius: 15px;
+    margin-top: -11px;
+    margin-left: 86px;
+   }
+
+   .aboutmedesc{
+            width: 311px;
+            margin-left: 42px;
+
+        }
+        .tab-titles{
+            margin-left: 33px;
+        }
+        .tab-links{
+            font-size: 21px;
+            margin-right: 39px;
+        }
+    .myimage1{
+        display: none;
+        margin-left: 20px;
+    }
+    .FirstSection{
+
+        margin: 32px 0;
+    }
+    .FirstSection div{
+        position:absolute;
+        width: 84vw; 
+
+    }
+    .name{
+        font-size: 16px;
+    }
+    .purple{
+        font-size: 16px;
+    }
+    #element{
+
+        font-size: 15px;
+
+    }
+    .deps{
+        font-size: 15px;
+    }
+
+    .btn.btn2 {
+    font-size: 22px;
+    }
+
+    .leftsection .buttons {
+    padding: 8px 0px;
+    width: 80vw;
+    }
+
+    .left{
+        left: -121px;
+    }
+    .leftsection {
+        margin-top: 100%;
+    bottom: 99px;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    text-shadow: 0px 0px 18px rgb(255, 255, 255);
+}
+    #msg{
+        margin-left: 87px;
+    }
+
+}
+
+    #msg{
+        color: rgb(255, 187, 0);
+        margin-top: 19px;
+        display: block;
+    }
+
+
+
+  .body-text{
+        margin-top: 20%;
+        font-size: 16px;
+    }
+
+
+     #element {
+            font-size: 20px;
+            color: rgb(255, 221, 0);
+            text-shadow: 0px 0px 18px rgb(255, 187, 0);
+        }
+
+        #container3D canvas {
+            width: 37vw !important;
+            height: 37vh !important;
+            position: relative;
+            top: -33px;
+            left: 136px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/f75b98ea46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                NIKHIL'S PORTFOLIO</div>
+            <div class="right" style="margin: -209px;font-family: 'Raleway', sans-serif;">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT ME</MEnu></a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </div>
+
+        </nav>
+    </header>
+   
+    <main>
+        <section class="FirstSection">
+            <div class="leftsection">
+                EMBEDDED WITH <span class="first" style="text-shadow: 0px 0px 18px rgb(255, 187, 0);">THINKING</span>
+                AND <br><span class="second"
+                    style="text-shadow: 0px 0px 18px rgb(255, 187, 0);"">APPEARANCE</span> USER INTERFACE <br><span class="
+                    name">Nikhil I am a Passionate</span><span class="purple"> Web Developer </span><span
+                    id="element"></span><span class="deps">looks each and every resources to complete a project with
+                    upcoming technologies to enhance user interface </span>
+                <div class="buttons">
+                <a class="btn btn2" href="Profile.pdf" target="_blank" download>Resume</a>
+                <a href="https://www.linkedin.com/in/nikhil-singh-b8b559237/" target="_blank" class="btn btn2"><i class='bx bxl-linkedin-square'></i>Visit LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+            </div>
+            <div id="rightsection"></div>
+            
+            <img class="myimage1" src="Picsart_24-01-21_16-24-17-647.png">
+            
+            <script type="module" src="js/main.js"></script>
+        </section>
+             
+        <hr class="whiteline" style="background-color:rgb(255, 255, 255);
+            height: 3px;
+            margin: 38px;
+            border: 0;">
+ <!-- -------------------about----------------------- -->
+       <div id="about">
+        <div class="container">
+            <div class="row">   
+            <div class="aboutcol1">
+                <img src="_ltw4pi.jpg" alt="">
+            </div>
+            <div class="aboutcol2"><h1 class="sub-title">About Me</h1><br>
+            <p class="aboutmedesc">👋 Hi there! I'm Nikhil Singh, a proactive B.Sc. in Information Technology student at Usha Pravin Gandhi College of Science Commerce and Arts, Mumbai University. 📚 Concurrently, I'm on the path to becoming a Cost and Management Accountant (CMA) through my studies at Miles Education.
+
+                💻 Passionate about all things tech, I'm on a journey to blend my IT skills from my BSCIT program with the financial acumen gained from my CMA pursuit. 🚀 Excited to bridge the gap between technology and finance, I'm always eager to explore new opportunities and contribute to innovative projects.
+                
+                Let's connect and explore the possibilities in the dynamic intersection of IT and finance! 🌐📊</p><br>
+
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Developer</span><br>Design Web/App Interface</li>
+                        <li><span>Video & Photo Editor</span><br>Video & Photo Editor Can Edit Videos & Photo</li>
+                        <li><span>Freelancer</span><br>Can Works as a Freelancer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Youtube</span><br>3 years+ Experience With Youtube Channel</li>
+                    </ul>
+                    <ul>
+                        <li><span>Editing</span><br>3 years+ Experience With Adobe Softwares</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-Current</span><br>BSCIT From Usha Pravin Gandhi College</li>
+                        <li><span>2019-2021</span><br>HSC From Thakur College</li>
+                        <li><span>2009-2019</span><br>SSC From Saradar Vallabhbhai Patel Vidyalaya </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+       </div>   
+
+
+<!-- -------------------projects------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-titleprj" style="text-align: center;">My Projects</h1>
+        <div class="project-lists">
+            <div class="work">
+                <img src="Calculator.jpeg">
+                <div class="layer">
+                    <h3s style="font-weight: 650;">Online Calculator</h3>
+                    <p>The Website is a Basic Calculator Which Helps You With
+                        your Calculations
+                    </p>
+                    <a href="https://tstnikhil4356.github.io/nikhilcalc.github.io/" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <a href="https://github.com/tstnikhil4356"  class="btn">See More</a>
+           <!-- <h1 class="sub-titleprj" style="text-align: center;">My Editing Services</h1>
+            <div class="edit">
+                <video autoplay loop muted src="ratio ediet.mp4"></video>
+
+            
+                </div>
+           <video autoplay loop muted src="4edit.mp4"></video>-->
+</div>
+<!--</div>
+<a href="https://www.instagram.com/nixhil.aep/"  class="btn">Click Here</a>
+</div> -->
+<!-- ------------contact-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me </h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>nikhilsingh652004@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 7977190384</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/just.nikhilsingh/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nikhil-singh-b8b559237/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/NIKHILS65027108" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://github.com/tstnikhil4356" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                    <button class="btn3"type="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Nikhil. Made With <i class="fa-solid fa-heart"></i> by Nikhil</p>
+    </div>
+</div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Video Editor', 'Graphic Designer', 'Freelancer', '&amp; Photo Editor.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script class="" type="module" src="main.js"></script>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right="0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right="-250px";
+            
+        }
+
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwJA75_xvzDacOVUEOLnOruL-fmVckOGxUD_deXwnkM27bC4LWnR9qtBRd7R58Wfc/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})           
+                    
+        .then(response => {msg.innerHTML="Message Sent Succesfully !!"
+        
+        setTimeout(function(){
+                msg.innerHTML=""
+            },5000) 
+        form.reset()         
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
